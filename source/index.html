@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta   name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<meta  name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<meta  charset="utf-8">
+	<meta   >
 	<title>
-		Mishka
+		Загородный сервис
 	</title>
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="preload" as="font" href="fonts/opensans.woff2">
-	<link rel="preload" as="font" href="fonts/opensansbold.woff2">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<script src="JS/picturefill.js" type="text/javascript"></script>  
+	
 </head>
-<body>
+<body class="main-page">
 <svg style="display: none"> 
 
 </svg>
 <header class="header">
-
+	<div class="header__logo">
+				<picture>
+					<source type="image/webp" media="(min-width: 1366px)"
+								 srcset="images/pilates-logo-for-panel-desktop.webp 1x, 
+												 images/pilates-logo-for-panel-desktop2x.webp 2x">
+				
+					<source type="image/webp" media="(min-width: 764px)"
+								 srcset="images/pilates-logo-for-panel-tablet.webp 1x, 
+												 images/pilates-logo-for-panel-tablet2x.webp 2x">
+				
+					<source type="image/webp" 
+									srcset="images/pilates-logo-for-panel.webp 1x, 
+												  images/pilates-logo-for-panel2x.webp 2x">
+				
+				
+					<source media="(min-width: 1366px)" 
+									srcset="images/pilates-logo-for-panel-desktop.png 1x,
+										 		  images/pilates-logo-for-panel-desktop2x.png 2x">
+				
+					<source media="(min-width: 764px)" 
+									srcset="images/pilates-logo-for-panel-tablet.png 1x,
+											 	 images/pilates-logo-for-panel-tablet2x.png 2x">
+				
+					<img src="images/pilates-logo-for-panel.png" 
+									srcset="images/pilates-logo-for-panel.png 1x,
+											 	 images/pilates-logo-for-panel2x.png 2x"
+									  alt="PILATES+" class="header__logo">
+				</picture>
+			</div>
 </header>
 
 <main class="main">
