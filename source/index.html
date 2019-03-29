@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta  name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<meta  name="viewport" content="width=device-width, initial-scale=1">
 	<meta  charset="utf-8">
 	<meta   >
 	<title>
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<script src="JS/picturefill.js" type="text/javascript"></script>  
+	<script src="JS/picturefill.js"></script>  
 	
 </head>
 <body class="main-page">
@@ -18,69 +18,73 @@
 
 </svg>
 <header class="header">
-	<div class="header__Logo">
-		<picture>
-			<source type="image/webp" media="(min-width: 1250px)"
-						 srcset="images/Logo-d.webp 1x, 
-										 images/Logo-d2x.webp 2x">
-		
-			<!-- <source type="image/webp" media="(min-width: 764px)"
-						 srcset="images/Logo-t.webp 1x, 
-										 images/Logo-t2x.webp 2x"> -->
-		
-			<source type="image/webp" 
-							srcset="images/Logo-m.webp 1x, 
-										  images/Logo-m2x.webp 2x">
-		
-		
-			<source media="(min-width: 1250px)" 
-							srcset="images/Logo-d.png 1x,
-								 		  images/Logo-d2x.png 2x">
-		
-			<!-- <source media="(min-width: 764px)" 
-							srcset="images/Logo-t.png 1x,
-									 	 images/Logo-t2x.png 2x"> -->
-		
-			<img src="images/Logo.png" 
-							srcset="images/Logo-m.png 1x,
-									 	 images/Logo-m2x.png 2x"
-							  alt="PILATES+" class="header__Logo">
-		</picture>
+	<div class="header__logo">
+		<a href="index.html" class="header__logo-link">
+			<picture>
+				<source type="image/webp" media="(min-width: 1250px)"
+							 srcset="images/Logo-d.webp 1x, 
+											 images/Logo-d2x.webp 2x">
+			
+				<!-- <source type="image/webp" media="(min-width: 764px)"
+							 srcset="images/Logo-t.webp 1x, 
+											 images/Logo-t2x.webp 2x"> -->
+			
+				<source type="image/webp" 
+								srcset="images/Logo-m.webp 1x, 
+											  images/Logo-m2x.webp 2x">
+			
+			
+				<source media="(min-width: 1250px)" 
+								srcset="images/Logo-d.png 1x,
+									 		  images/Logo-d2x.png 2x">
+			
+				<!-- <source media="(min-width: 764px)" 
+								srcset="images/Logo-t.png 1x,
+										 	 images/Logo-t2x.png 2x"> -->
+			
+				<img src="images/Logo.png" 
+								srcset="images/Logo-m.png 1x,
+										 	 images/Logo-m2x.png 2x"
+								  alt="Загородный сервис" class="header__img">
+			</picture>
+		</a>
 	</div>
-	<nav class="main-nav header">
+	<nav class="main-nav header__main-nav">
+		<button class="burger-btn"></button>
+		<h2 class="main-nav__title">Меню</h2>
 		<ul class="main-nav main-nav_list">
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">Колодцы</a>
+				<a href="#" class="main-nav__link">Колодцы</a>
 			</li>
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">Септики</a>
+				<a href="#" class="main-nav__link">Септики</a>
 			</li>
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">Водоснабжение</a>
+				<a href="#" class="main-nav__link">Водоснабжение</a>
 			</li>
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">Отопление</a>
+				<a href="#" class="main-nav__link">Отопление</a>
 			</li>
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">Прайс</a>
+				<a href="price.html" class="main-nav__link">Прайс</a>
 			</li>
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">Товары</a>
+				<a href="goods.html" class="main-nav__link">Товары</a>
 			</li>
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">Портфолио</a>
+				<a href="#" class="main-nav__link">Портфолио</a>
 			</li>
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">О компании</a>
+				<a href="#" class="main-nav__link">О компании</a>
 			</li>
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">Отзывы</a>
+				<a href="#" class="main-nav__link">Отзывы</a>
 			</li>
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">Статьи</a>
+				<a href="#" class="main-nav__link">Статьи</a>
 			</li>
 			<li class="main-nav__item">
-				<a href="" class="main-nav__link">Контакты</a>
+				<a href="#" class="main-nav__link">Контакты</a>
 			</li>
 		</ul>
 	</nav>
@@ -88,17 +92,17 @@
 		<h2 class="visually-hidden">Связь с нами</h2>
 		<ul class="header__contacts-list">
 			<li>
-				<a href="" class="header__contacts-link">
+				<a href="#" class="header__contacts-link">
 					+7 (812) 000-00-0
 				</a>
 			</li>
 			<li>
-				<a href="" class="header__contacts-link">
+				<a href="#" class="header__contacts-link">
 					+7 (812) 000-00-0
 				</a>
 			</li>
 			<li>
-				<a href="" class="header__contacts-link">
+				<a href="#" class="header__contacts-link">
 					info@info.ru
 				</a>
 			</li>
@@ -108,32 +112,32 @@
 		<h2 class="visually-hidden">Мы в соцсетях</h2>
 		<ul class="header__social-list">
 			<li>
-				<a href="" class="header__social-link">
+				<a href="#" class="header__social-link">
 					Viber
 				</a>
 			</li>
 			<li>
-				<a href="" class="header__social-link">
+				<a href="#" class="header__social-link">
 					Telegram
 				</a>
 			</li>
 			<li>
-				<a href="" class="header__social-link">
+				<a href="#" class="header__social-link">
 					VK
 				</a>
 			</li>
 			<li>
-				<a href="" class="header__social-link">
+				<a href="#" class="header__social-link">
 					Insta
 				</a>
 			</li>
 			<li>
-				<a href="" class="header__social-link">
+				<a href="#" class="header__social-link">
 					Twitter
 				</a>
 			</li>
 			<li>
-				<a href="" class="header__social-link">
+				<a href="#" class="header__social-link">
 					WhatsApp
 				</a>
 			</li>
@@ -142,7 +146,7 @@
 </header>
 
 <main class="main">
-	<div class="paralax-bg">
+	<div class="paralax">
 		<picture>
 			<source type="image/webp" media="(min-width: 1250px)"
 						 srcset="images/Background.webp 1x, 
@@ -168,7 +172,7 @@
 			<img src="images/Background.jpg" 
 							srcset="images/Background-m.jpg 1x,
 									 	 images/Background-m2x.jpg 2x"
-							  alt="PILATES+" class="header__Logo">
+							  alt="PILATES+" class="footer__Logo">
 		</picture>
 	</div>
 	<section class="services">
@@ -176,91 +180,847 @@
 		<div class="services__controls">
 			<button class="services__btn">Назад</button>
 			<button class="services__btn">Вперед</button>
-			<ul class="services__list">
-				<li class="services__item">
-					<h3 class="services__name">Колодцы</h3>
-					<form action="" class="services__form">
-						<label class="services__type">
-							Подбор септика
-							<input name="well" type="checkbox" class="visually-hidden">
-						</label>
-						<label class="services__type">
-							Монтаж септика
-							<input name="well" type="checkbox" class="visually-hidden">
-						</label>
-						<label class="services__type">
-							Обслуживание септика
-							<input name="well" type="checkbox" class="visually-hidden">
-						</label>
-						<button class="services__button"></button>
-					</form>
-					<div class="services__mask"></div>
-				</li>
-				<li class="services__item">
-					<h3 class="services__name">Септики</h3>
-					<form action="" class="services__form">
-						<label class="services__type">
-							Подбор септика
-							<input name="septic" type="checkbox" class="visually-hidden">
-						</label>
-						<label class="services__type">
-							Монтаж септика
-							<input name="septic" type="checkbox" class="visually-hidden">
-						</label>
-						<label class="services__type">
-							Обслуживание септика
-							<input name="septic" type="checkbox" class="visually-hidden">
-						</label>
-						<button class="services__button"></button>
-					</form>
-					<div class="services__mask"></div>
-				</li>
-				<li class="services__item">
-					<h3 class="services__name">Водоснабжение<br> дома</h3>
-					<form action="" class="services__form">
-						<label class="services__type">
-							Подбор септика
-							<input name="water" type="checkbox" class="visually-hidden">
-						</label>
-						<label class="services__type">
-							Монтаж септика
-							<input name="water" type="checkbox" class="visually-hidden">
-						</label>
-						<label class="services__type">
-							Обслуживание септика
-							<input name="water" type="checkbox" class="visually-hidden">
-						</label>
-						<button class="services__button"></button>
-					</form>
-					<div class="services__mask"></div>
-				</li>
-				<li class="services__item">
-					<h3 class="services__name">Отопление</h3>
-					<form action="" class="services__form">
-						<label class="services__type">
-							Подбор септика
-							<input name="well" type="checkbox" class="visually-hidden">
-						</label>
-						<label class="services__type">
-							Монтаж септика
-							<input name="well" type="checkbox" class="visually-hidden">
-						</label>
-						<label class="services__type">
-							Обслуживание септика
-							<input name="well" type="checkbox" class="visually-hidden">
-						</label>
-						<button class="services__button"></button>
-					</form>
-					<div class="services__mask"></div>
-				</li>
+		</div>
+		<ul class="services__list">
+			<li class="services__item">
+				<h3 class="services__name">Колодцы</h3>
+				<form action="post" class="services__form">
+					<label class="services__type">
+						Подбор септика
+						<input name="well" type="checkbox" class="visually-hidden">
+					</label>
+					<label class="services__type">
+						Монтаж септика
+						<input name="well" type="checkbox" class="visually-hidden">
+					</label>
+					<label class="services__type">
+						Обслуживание септика
+						<input name="well" type="checkbox" class="visually-hidden">
+					</label>
+					<button class="services__button">подробнее</button>
+				</form>
+				<div class="services__mask"></div>
+			</li>
+			<li class="services__item">
+				<h3 class="services__name">Септики</h3>
+				<form action="get" class="services__form">
+					<label class="services__type">
+						Подбор септика
+						<input name="septic" type="checkbox" class="visually-hidden">
+					</label>
+					<label class="services__type">
+						Монтаж септика
+						<input name="septic" type="checkbox" class="visually-hidden">
+					</label>
+					<label class="services__type">
+						Обслуживание септика
+						<input name="septic" type="checkbox" class="visually-hidden">
+					</label>
+					<button class="services__button">подробнее</button>
+				</form>
+				<div class="services__mask"></div>
+			</li>
+			<li class="services__item">
+				<h3 class="services__name">Водоснабжение<br> дома</h3>
+				<form action="get" class="services__form">
+					<label class="services__type">
+						Подбор септика
+						<input name="water" type="checkbox" class="visually-hidden">
+					</label>
+					<label class="services__type">
+						Монтаж септика
+						<input name="water" type="checkbox" class="visually-hidden">
+					</label>
+					<label class="services__type">
+						Обслуживание септика
+						<input name="water" type="checkbox" class="visually-hidden">
+					</label>
+					<button class="services__button">подробнее</button>
+				</form>
+				<div class="services__mask"></div>
+			</li>
+			<li class="services__item">
+				<h3 class="services__name">Отопление</h3>
+				<form action="get" class="services__form">
+					<label class="services__type">
+						Подбор септика
+						<input name="well" type="checkbox" class="visually-hidden">
+					</label>
+					<label class="services__type">
+						Монтаж септика
+						<input name="well" type="checkbox" class="visually-hidden">
+					</label>
+					<label class="services__type">
+						Обслуживание септика
+						<input name="well" type="checkbox" class="visually-hidden">
+					</label>
+					<button class="services__button">подробнее</button>
+				</form>
+				<div class="services__mask"></div>
+			</li>
+		</ul>
+	</section>
+	<section class="goods">
+		<h2 class="goods__title">Товары</h2>
+		<div class="goods__controls">
+			<button class="goods__btn">Назад</button>
+			<button class="goods__btn">Вперед</button>
+		</div>
+		<ul class="goods__list">
+			<li class="goods__item">
+				<picture>
+					<source type="image/webp"
+								 srcset="images/goods-1-d.webp 1x, 
+												 images/goods-1-d2x.webp 2x">
+
+				
+					<img src="images/goods-1-d.jpg" 
+									srcset="images/goods-1-d.jpg 1x,
+											 	 images/goods-1-d2x.jpg 2x"
+									  alt="PILATES+" class="goods__img">
+				</picture>
+				<h3 class="goods__name">Кольцо КС 7-9</h3>
+				<p class="goods__price">
+					<span class="goods__cost">1600</span>
+					руб/
+					<span class="goods__number">шт</span>
+				</p>
+				<button class="goods__button">подробнее</button>
+			</li>
+			<li class="goods__item">
+				<picture>
+					<source type="image/webp"
+								 srcset="images/goods-2-d.webp 1x, 
+												 images/goods-2-d2x.webp 2x">
+
+				
+					<img src="images/goods-2-d.jpg" 
+									srcset="images/goods-2-d.jpg 1x,
+											 	 images/goods-2-d2x.jpg 2x"
+									  alt="PILATES+" class="goods__img">
+				</picture>
+				<h3 class="goods__name">Речная галька</h3>					
+				<p class="goods__price">
+					<span class="goods__cost">1900</span>
+					руб/
+					<span class="goods__number">50 кг</span>
+				</p>
+				<button class="goods__button">подробнее</button>
+			</li>
+			<li class="goods__item">
+				<picture>
+					<source type="image/webp"
+								 srcset="images/goods-3-d.webp 1x, 
+												 images/goods-3-d2x.webp 2x">
+
+				
+					<img src="images/goods-3-d.jpg" 
+									srcset="images/goods-3-d.jpg 1x,
+											 	 images/goods-3-d2x.jpg 2x"
+									  alt="PILATES+" class="goods__img">
+				</picture>
+				<h3 class="goods__name">Горный кварц</h3>			
+				<p class="goods__price">
+					<span class="goods__cost">2100</span>
+					руб/
+					<span class="goods__number">50 кг</span>
+				</p>
+				<button class="goods__button">подробнее</button>
+			</li>
+			<li class="goods__item">
+				<picture>
+					<source type="image/webp"
+								 srcset="images/goods-4-d.webp 1x, 
+												 images/goods-4-d2x.webp 2x">
+
+				
+					<img src="images/goods-4-d.jpg" 
+									srcset="images/goods-4-d.jpg 1x,
+											 	 images/goods-4-d2x.jpg 2x"
+									  alt="PILATES+" class="goods__img">
+				</picture>
+				<h3 class="goods__name">Шунгит</h3>		
+				<p class="goods__price">
+					<span class="goods__cost">1900</span>
+					руб/
+					<span class="goods__number">50 кг</span>
+				</p>
+				<button class="goods__button">подробнее</button>
+			</li>
+		</ul>
+	</section>
+	<section class="benefit">
+		<div class="benefit__paralax paralax">
+			<h2 class="benefit__title">Хорошее решение</h2>
+			<b class="benefit__lead">Торопитесь пристроить рубли</b>
+			<ul class="benefit__list">
+				<li class="benefit__item">Скидки до 20 %</li>
+				<li class="benefit__item">Вы покупаете  - храним до лета</li>
+				<li class="benefit__item">Установим когда скажете</li>
 			</ul>
 		</div>
 	</section>
+	<section class="feedback">
+		<h3 class="visually-hidden">Форма обратной связи</h3>
+		<div class="feedback__wrapper">
+			<p class="feedback__description">Заполните форму и мы свяжемся с вами!</p>
+			<form action="get" class="feedback__form">
+				<input placeholder="Ваше имя" class="feedback__input feedback__input--name" type="text">
+				<input placeholder="Ваш телефон" class="feedback__input feedback__input--phone" type="tel">
+				<button class="feedback__button button button--green">Отправить</button>
+			</form>
+		</div>
+	</section>
+	<section class="MO">
+		<h2 class="MO__title">Как мы работаем</h2>
+		<ul class="MO__list">
+			<li class="MO__item">
+				<p class="MO__step">1</p>
+				<p class="MO__description">Первое что мы сделаем</p>
+			</li>
+			<li class="MO__item">
+				<p class="MO__step">2</p>
+				<p class="MO__description">Второе что мы сделаем</p>
+			</li>
+			<li class="MO__item">
+				<p class="MO__step">3</p>
+				<p class="MO__description">Третье что мы сделаем</p>
+			</li>
+			<li class="MO__item">
+				<p class="MO__step">4</p>
+				<p class="MO__description">Четвертое что мы сделаем</p>
+			</li>
+			<li class="MO__item">
+				<p class="MO__step">5</p>
+				<p class="MO__description">Пятое что мы сделаем</p>
+			</li>
+			<li class="MO__item">
+				<p class="MO__step">6</p>
+				<p class="MO__description">Шестое что мы сделаем</p>
+			</li>
+		</ul>
+	</section>
+	<section class="portfolio">
+		<h2 class="portfolio__title">Портфолио</h2>
+		<div class="portfolio__controls">
+			<button class="portfolio__btn">Назад</button>
+			<button class="portfolio__btn">Вперед</button>
+		</div>
+		<ul class="portfolio__list">
+			<li class="portfolio__item">
+				<picture>
+					<source type="image/webp"
+								 srcset="images/well-1-d.webp 1x, 
+												 images/well-1-d2x.webp 2x">
+
+				
+					<img src="images/well-1-d.jpg" 
+									srcset="images/well-1-d.jpg 1x,
+											 	 images/well-1-d2x.jpg 2x"
+									  alt="PILATES+" class="portfolio__img">
+				</picture>
+				<div class="portfolio__mask"></div>
+			</li>
+			<li class="portfolio__item">
+				<picture>
+					<source type="image/webp"
+								 srcset="images/well-2-d.webp 1x, 
+												 images/well-2-d2x.webp 2x">
+
+				
+					<img src="images/well-3-d.jpg" 
+									srcset="images/well-2-d.jpg 1x,
+											 	 images/goods-2-d2x.jpg 2x"
+									  alt="PILATES+" class="portfolio__img">
+				</picture>
+				<div class="portfolio__mask"></div>
+			</li>
+			<li class="portfolio__item">
+				<picture>
+					<source type="image/webp"
+								 srcset="images/well-3-d.webp 1x, 
+												 images/well-3-d2x.webp 2x">
+
+				
+					<img src="images/well-3-d.jpg" 
+									srcset="images/well-3-d.jpg 1x,
+											 	 images/well-3-d2x.jpg 2x"
+									  alt="PILATES+" class="portfolio__img">
+				</picture>
+				<div class="portfolio__mask"></div>
+			</li>
+			<li class="portfolio__item">
+				<picture>
+					<source type="image/webp"
+								 srcset="images/well-4-d.webp 1x, 
+												 images/well-4-d2x.webp 2x">
+
+				
+					<img src="images/well-4-d.jpg" 
+									srcset="images/well-4-d.jpg 1x,
+											 	 images/well-4-d2x.jpg 2x"
+									  alt="PILATES+" class="portfolio__img">
+				</picture>
+				<div class="portfolio__mask"></div>
+			</li>
+		</ul>
+		<button class="portfolio__button button button--green">Больше фото</button>
+	</section>
+	<section class="advantages">
+		<h2 class="advantages__title">Почему мы?</h2>
+		<ul class="advantages__list">
+
+			<li class="advantages__item">
+				<h3 class="advantages__title">Первое преимущество</h3>
+				<span class="advantages__number">01</span>
+				<p class="advantages__description">
+					Задача организации, в особенности же дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития
+				</p>
+			</li>
+
+			<li class="advantages__item">
+				<h3 class="advantages__title">Второе преимущество</h3>
+				<span class="advantages__number">02</span>
+				<p class="advantages__description">
+					Задача организации, в особенности же дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития
+				</p>
+			</li>
+
+			<li class="advantages__item">
+				<h3 class="advantages__title">Третье преимущество</h3>
+				<span class="advantages__number">03</span>
+				<p class="advantages__description">
+					Задача организации, в особенности же дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития
+				</p>
+			</li>
+
+			<li class="advantages__item">
+				<h3 class="advantages__title">Четвертое преимущество</h3>
+				<span class="advantages__number">04</span>
+				<p class="advantages__description">
+					Задача организации, в особенности же дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития
+				</p>
+			</li>
+		</ul>
+	</section>
+	<section class="user-contacts">
+		<div class="paralax user-contacts__wrapper">
+			<b class="user-contacts__lead">
+				оставьте свои данные и мы проконсультируем вас по всем вопросам
+			</b>
+			<section class="feedback">
+				<h3 class="visually-hidden">Форма обратной связи</h3>
+				<div class="feedback__wrapper">
+					<p class="feedback__description">Заполните форму и мы свяжемся с вами!</p>
+					<form action="get" class="feedback__form">
+						<input placeholder="Ваше имя" class="feedback__input feedback__input--name" type="text">
+						<input placeholder="Ваш телефон" class="feedback__input feedback__input--phone" type="tel">
+						<button class="feedback__button button button--green">Отправить</button>
+					</form>
+				</div>
+			</section>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<h2 class="reviews__title">Отзывы</h2>
+		<div class="reviews__controls">
+			<button class="reviews__btn">Назад</button>
+			<button class="reviews__btn">Вперед</button>
+		</div>
+		<ul class="reviews__list">
+			<li class="reviews__item">
+				<div class="reviews__content">
+					<picture>
+						<source type="image/webp" media="(min-width: 1250px)"
+									 srcset="images/review-1-d.webp 1x, 
+													 images/review-1-d2x.webp 2x">
+					
+						<!-- <source type="image/webp" media="(min-width: 764px)"
+									 srcset="images/review-1-t.webp 1x, 
+													 images/review-1-t2x.webp 2x"> -->
+					
+						<source type="image/webp" 
+										srcset="images/review-1-m.webp 1x, 
+													  images/review-1-m2x.webp 2x">
+					
+					
+						<source media="(min-width: 1250px)" 
+										srcset="images/review-1-d.jpg 1x,
+											 		  images/review-1-d2x.jpg 2x">
+					
+						<!-- <source media="(min-width: 764px)" 
+										srcset="images/review-1-t.jpg 1x,
+												 	 images/review-1-t2x.jpg 2x"> -->
+					
+						<img src="images/review-1.jpg" 
+										srcset="images/review-1-m.jpg 1x,
+												 	 images/review-1-m2x.jpg 2x"
+										  alt="Автор отзыва" class="reviews__img">
+					</picture>
+					<p class="reviews__name">Леонид Казанский</p>
+					<p class="reviews__city">г. Москва</p>
+					<p class="reviews__text">
+						Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что сложившаяся структура организации требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+					</p>
+					<div class="reviews__panel">
+						<button class="reviews__btn">
+							<span class="review__btn-closed">Подробнее</span>
+							<span class="review__btn-opened">Меньше</span>
+						</button>
+						<p class="reviews__date">16.12.2018</p>
+					</div>
+				</div>
+			</li>
+			<li class="reviews__item">
+				<div class="reviews__content">
+					<picture>
+						<source type="image/webp" media="(min-width: 1250px)"
+									 srcset="images/review-2-d.webp 1x, 
+													 images/review-2-d2x.webp 2x">
+					
+						<!-- <source type="image/webp" media="(min-width: 764px)"
+									 srcset="images/review-2-t.webp 1x, 
+													 images/review-2-t2x.webp 2x"> -->
+					
+						<source type="image/webp" 
+										srcset="images/review-2-m.webp 1x, 
+													  images/review-2-m2x.webp 2x">
+					
+					
+						<source media="(min-width: 1250px)" 
+										srcset="images/review-2-d.jpg 1x,
+											 		  images/review-2-d2x.jpg 2x">
+					
+						<!-- <source media="(min-width: 764px)" 
+										srcset="images/review-2-t.jpg 1x,
+												 	 images/review-2-t2x.jpg 2x"> -->
+					
+						<img src="images/review-2.jpg" 
+										srcset="images/review-2-m.jpg 1x,
+												 	 images/review-2-m2x.jpg 2x"
+										  alt="Автор отзыва" class="reviews__img">
+					</picture>
+					<p class="reviews__name">Вячеслав Иванов</p>
+					<p class="reviews__city">г. Москва</p>
+					<p class="reviews__text">
+						Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что сложившаяся структура организации требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+					</p>
+					<div class="reviews__panel">
+						<button class="reviews__btn">
+							<span class="review__btn-closed">Подробнее</span>
+							<span class="review__btn-opened">Меньше</span>
+						</button>
+						<p class="reviews__date">16.12.2018</p>
+					</div>
+				</div>
+			</li>
+			<li class="reviews__item">
+				<div class="reviews__content">
+					<picture>
+						<source type="image/webp" media="(min-width: 1250px)"
+									 srcset="images/review-none-d.webp 1x, 
+													 images/review-none-d2x.webp 2x">
+					
+						<!-- <source type="image/webp" media="(min-width: 764px)"
+									 srcset="images/review-none-t.webp 1x, 
+													 images/review-none-t2x.webp 2x"> -->
+					
+						<source type="image/webp" 
+										srcset="images/review-none-m.webp 1x, 
+													  images/review-none-m2x.webp 2x">
+					
+					
+						<source media="(min-width: 1250px)" 
+										srcset="images/review-none-d.jpg 1x,
+											 		  images/review-none-d2x.jpg 2x">
+					
+						<!-- <source media="(min-width: 764px)" 
+										srcset="images/review-none-t.jpg 1x,
+												 	 images/review-none-t2x.jpg 2x"> -->
+					
+						<img src="images/review-none.jpg" 
+										srcset="images/review-none-m.jpg 1x,
+												 	 images/review-none-m2x.jpg 2x"
+										  alt="Автор отзыва" class="reviews__img">
+					</picture>
+					<p class="reviews__name">Екатерина Петрова</p>
+					<p class="reviews__city">г. Москва</p>
+					<p class="reviews__text">
+						Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что сложившаяся структура организации требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+					</p>
+					<div class="reviews__panel">
+						<button class="reviews__btn">
+							<span class="review__btn-closed">Подробнее</span>
+							<span class="review__btn-opened">Меньше</span>
+						</button>
+						<p class="reviews__date">16.12.2018</p>
+					</div>
+				</div>
+			</li>
+			<li class="reviews__item">
+				<div class="reviews__content">
+					<picture>
+						<source type="image/webp" media="(min-width: 1250px)"
+									 srcset="images/review-none-d.webp 1x, 
+													 images/review-none-d2x.webp 2x">
+					
+						<!-- <source type="image/webp" media="(min-width: 764px)"
+									 srcset="images/review-none-t.webp 1x, 
+													 images/review-4-t2x.webp 2x"> -->
+					
+						<source type="image/webp" 
+										srcset="images/review-none-m.webp 1x, 
+													  images/review-none-m2x.webp 2x">
+					
+					
+						<source media="(min-width: 1250px)" 
+										srcset="images/review-none-d.jpg 1x,
+											 		  images/review-none-d2x.jpg 2x">
+					
+						<!-- <source media="(min-width: 764px)" 
+										srcset="images/review-none-t.jpg 1x,
+												 	 images/review-none-t2x.jpg 2x"> -->
+					
+						<img src="images/review-none.jpg" 
+										srcset="images/review-none-m.jpg 1x,
+												 	 images/review-none-m2x.jpg 2x"
+										  alt="Автор отзыва" class="reviews__img">
+					</picture>
+					<p class="reviews__name">Юрий Станиславский</p>
+					<p class="reviews__city">г. Москва</p>
+					<p class="reviews__text">
+						Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что сложившаяся структура организации требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+					</p>
+					<div class="reviews__panel">
+						<button class="reviews__btn">
+							<span class="reviews__btn-closed">Подробнее</span>
+							<span class="reviews__btn-opened">Меньше</span>
+						</button>
+						<p class="reviews__date">16.12.2018</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="reviews__slider-btns">
+			<button class="reviews__slider-btn"></button>
+			<button class="reviews__slider-btn"></button>
+			<button class="reviews__slider-btn"></button>
+			<button class="reviews__slider-btn"></button>
+		</div>
+		<button class="reviews-button button button--green">Больше отзывов</button>
+	</section>
+	
+	<section class="blog">
+		<h2 class="blog__title">Статьи</h2>
+		<div class="blog__controls">
+			<button class="blog__btn">Назад</button>
+			<button class="blog__btn">Вперед</button>
+		</div>
+		<ul class="blog__list">
+			<li class="blog__item">
+				<div class="blog__content">
+					<picture>
+						<source type="image/webp" media="(min-width: 1250px)"
+									 srcset="images/blog-1-d.webp 1x, 
+													 images/blog-1-d2x.webp 2x">
+					
+						<!-- <source type="image/webp" media="(min-width: 764px)"
+									 srcset="images/blog-1-t.webp 1x, 
+													 images/blog-1-t2x.webp 2x"> -->
+					
+						<source type="image/webp" 
+										srcset="images/blog-1-m.webp 1x, 
+													  images/blog-1-m2x.webp 2x">
+					
+					
+						<source media="(min-width: 1250px)" 
+										srcset="images/blog-1-d.jpg 1x,
+											 		  images/blog-1-d2x.jpg 2x">
+					
+						<!-- <source media="(min-width: 764px)" 
+										srcset="images/blog-1-t.jpg 1x,
+												 	 images/blog-1-t2x.jpg 2x"> -->
+					
+						<img src="images/blog-1.jpg" 
+										srcset="images/blog-1-m.jpg 1x,
+												 	 images/blog-1-m2x.jpg 2x"
+										  alt="картинка в тему статьи" class="blog__img">
+					</picture>
+					<p class="blog__name">Какие преимущества от установки септика</p>
+					<p class="blog__text">
+						Задача организации, в особенности же дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития
+					</p>
+					<div class="blog__panel">
+						<a href="#" class="blog__link">
+							Подробнее
+						</a>
+						<p class="blog__date">16.12.2018</p>
+					</div>
+				</div>
+			</li>
+			<li class="blog__item">
+				<div class="blog__content">
+					<picture>
+						<source type="image/webp" media="(min-width: 1250px)"
+									 srcset="images/blog-2-d.webp 1x, 
+													 images/blog-2-d2x.webp 2x">
+					
+						<!-- <source type="image/webp" media="(min-width: 764px)"
+									 srcset="images/blog-2-t.webp 1x, 
+													 images/blog-2-t2x.webp 2x"> -->
+					
+						<source type="image/webp" 
+										srcset="images/blog-2-m.webp 1x, 
+													  images/blog-2-m2x.webp 2x">
+					
+					
+						<source media="(min-width: 1250px)" 
+										srcset="images/blog-2-d.jpg 1x,
+											 		  images/blog-2-d2x.jpg 2x">
+					
+						<!-- <source media="(min-width: 764px)" 
+										srcset="images/blog-2-t.jpg 1x,
+												 	 images/blog-2-t2x.jpg 2x"> -->
+					
+						<img src="images/blog-2.jpg" 
+										srcset="images/blog-2-m.jpg 1x,
+												 	 images/blog-2-m2x.jpg 2x"
+										  alt="картинка в тему статьи" class="blog__img">
+					</picture>
+					<p class="blog__name">Какие преимущества от установки септика</p>
+					<p class="blog__text">
+						Задача организации, в особенности же дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития
+					</p>
+					<div class="blog__panel">
+						<a href="#" class="blog__link">
+							Подробнее
+						</a>
+						<p class="blog__date">16.12.2018</p>
+					</div>
+				</div>
+			</li>
+			<li class="blog__item">
+				<div class="blog__content">
+					<picture>
+						<source type="image/webp" media="(min-width: 1250px)"
+									 srcset="images/blog-3-d.webp 1x, 
+													 images/blog-3-d2x.webp 2x">
+					
+						<!-- <source type="image/webp" media="(min-width: 764px)"
+									 srcset="images/blog-3-t.webp 1x, 
+													 images/blog-3-t2x.webp 2x"> -->
+					
+						<source type="image/webp" 
+										srcset="images/blog-3-m.webp 1x, 
+													  images/blog-3-m2x.webp 2x">
+					
+					
+						<source media="(min-width: 1250px)" 
+										srcset="images/blog-3-d.jpg 1x,
+											 		  images/blog-3-d2x.jpg 2x">
+					
+						<!-- <source media="(min-width: 764px)" 
+										srcset="images/blog-3-t.jpg 1x,
+												 	 images/blog-3-t2x.jpg 2x"> -->
+					
+						<img src="images/blog-3.jpg" 
+										srcset="images/blog-3-m.jpg 1x,
+												 	 images/blog-3-m2x.jpg 2x"
+										  alt="картинка в тему статьи" class="blog__img">
+					</picture>
+					<p class="blog__name">Какие преимущества от установки септика</p>
+					<p class="blog__text">
+						Задача организации, в особенности же дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития
+					</p>
+					<div class="blog__panel">
+						<a href="#" class="blog__link">
+							Подробнее
+						</a>
+						<p class="blog__date">16.12.2018</p>
+					</div>
+				</div>
+			</li>
+			<li class="blog__item">
+				<div class="blog__content">
+					<picture>
+						<source type="image/webp" media="(min-width: 1250px)"
+									 srcset="images/blog-4-d.webp 1x, 
+													 images/blog-4-d2x.webp 2x">
+					
+						<!-- <source type="image/webp" media="(min-width: 764px)"
+									 srcset="images/blog-4-t.webp 1x, 
+													 images/blog-4-t2x.webp 2x"> -->
+					
+						<source type="image/webp" 
+										srcset="images/blog-4-m.webp 1x, 
+													  images/blog-4-m2x.webp 2x">
+					
+					
+						<source media="(min-width: 1250px)" 
+										srcset="images/blog-4-d.jpg 1x,
+											 		  images/blog-4-d2x.jpg 2x">
+					
+						<!-- <source media="(min-width: 764px)" 
+										srcset="images/blog-4-t.jpg 1x,
+												 	 images/blog-4-t2x.jpg 2x"> -->
+					
+						<img src="images/blog-4.jpg" 
+										srcset="images/blog-4-m.jpg 1x,
+												 	 images/blog-4-m2x.jpg 2x"
+										  alt="картинка в тему статьи" class="blog__img">
+					</picture>
+					<p class="blog__name">Какие преимущества от установки септика</p>
+					<p class="blog__text">
+						Задача организации, в особенности же дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития
+					</p>
+					<div class="blog__panel">
+						<a href="#" class="blog__link">
+							Подробнее
+						</a>
+						<p class="blog__date">16.12.2018</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="blog__slider-btns">
+			<button class="blog__slider-btn"></button>
+			<button class="blog__slider-btn"></button>
+			<button class="blog__slider-btn"></button>
+			<button class="blog__slider-btn"></button>
+		</div>
+		<button class="blog-button button button--green">Все статьи</button>
+	</section>
 </main>
 <footer class="footer">
-
+	<div class="footer__Logo">
+		<picture>
+			<source type="image/webp" media="(min-width: 1250px)"
+						 srcset="images/Logo-d.webp 1x, 
+										 images/Logo-d2x.webp 2x">
+		
+			<!-- <source type="image/webp" media="(min-width: 764px)"
+						 srcset="images/Logo-t.webp 1x, 
+										 images/Logo-t2x.webp 2x"> -->
+		
+			<source type="image/webp" 
+							srcset="images/Logo-m.webp 1x, 
+										  images/Logo-m2x.webp 2x">
+		
+		
+			<source media="(min-width: 1250px)" 
+							srcset="images/Logo-d.png 1x,
+								 		  images/Logo-d2x.png 2x">
+		
+			<!-- <source media="(min-width: 764px)" 
+							srcset="images/Logo-t.png 1x,
+									 	 images/Logo-t2x.png 2x"> -->
+		
+			<img src="images/Logo.png" 
+							srcset="images/Logo-m.png 1x,
+									 	 images/Logo-m2x.png 2x"
+							  alt="PILATES+" class="footer__Logo">
+		</picture>
+	</div>
+	<section class="footer__social">
+		<h2 class="visually-hidden">Мы в соцсетях</h2>
+		<ul class="footer__social-list">
+			<li>
+				<a href="#" class="footer__social-link">
+					Viber
+				</a>
+			</li>
+			<li>
+				<a href="#" class="footer__social-link">
+					Telegram
+				</a>
+			</li>
+			<li>
+				<a href="#" class="footer__social-link">
+					VK
+				</a>
+			</li>
+			<li>
+				<a href="#" class="footer__social-link">
+					Insta
+				</a>
+			</li>
+			<li>
+				<a href="#" class="footer__social-link">
+					Twitter
+				</a>
+			</li>
+			<li>
+				<a href="#" class="footer__social-link">
+					WhatsApp
+				</a>
+			</li>
+		</ul>
+	</section>
+	<nav class="footer-nav footer__footer-nav">
+		<ul class="footer-nav_list">
+			<li class="footer-nav__item">
+				<a href="#" class="footer-nav__link">Колодцы</a>
+			</li>
+			<li class="footer-nav__item">
+				<a href="#" class="footer-nav__link">Септики</a>
+			</li>
+			<li class="footer-nav__item">
+				<a href="#" class="footer-nav__link">Водоснабжение</a>
+			</li>
+			<li class="footer-nav__item">
+				<a href="#" class="footer-nav__link">Отопление</a>
+			</li>
+			<li class="footer-nav__item">
+				<a href="price.html" class="footer-nav__link">Прайс</a>
+			</li>
+			<li class="footer-nav__item">
+				<a href="goods.html" class="footer-nav__link">Товары</a>
+			</li>
+			<li class="footer-nav__item">
+				<a href="#" class="footer-nav__link">Портфолио</a>
+			</li>
+			<li class="footer-nav__item">
+				<a href="#" class="footer-nav__link">О компании</a>
+			</li>
+			<li class="footer-nav__item">
+				<a href="#" class="footer-nav__link">Отзывы</a>
+			</li>
+			<li class="footer-nav__item">
+				<a href="#" class="footer-nav__link">Статьи</a>
+			</li>
+			<li class="footer-nav__item">
+				<a href="#" class="footer-nav__link">Контакты</a>
+			</li>
+		</ul>
+	</nav>
+	<section class="footer__contacts">
+		<h2 class="visually-hidden">Связь с нами</h2>
+		<ul class="footer__contacts-list">
+			<li>
+				<a href="#" class="footer__contacts-link">
+					+7 (812) 000-00-0
+				</a>
+			</li>
+			<li>
+				<a href="#" class="footer__contacts-link">
+					+7 (812) 000-00-0
+				</a>
+			</li>
+			<li>
+				<a href="#" class="footer__contacts-link">
+					info@info.ru
+				</a>
+			</li>
+			<li>
+				<a href="#" class="footer__contacts-link">
+					Санкт-Петербург, Домостроительная, 4
+				</a>
+			</li>
+		</ul>
+	</section>
+	
 </footer>
-</section>
-<script src="JS/script.js" type="text/javascript"></script>
+<script src="JS/script.js"></script>
 </body>
 </html>

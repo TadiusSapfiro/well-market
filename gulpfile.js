@@ -45,7 +45,7 @@ gulp.task("server", function () {
   gulp.watch("source/scss/**/*.scss", gulp.series("css"));
   gulp.watch("source/*.html", gulp.series("html"));
   gulp.watch("source/js/**/*.js", gulp.series("js"));
-   gulp.watch("source/js/**/*.js").on("change", server.reload);
+  gulp.watch("source/js/**/*.js").on("change", server.reload);
   gulp.watch("source/*.html").on("change", server.reload);
 });
 

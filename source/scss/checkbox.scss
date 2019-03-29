@@ -43,7 +43,7 @@
 	}
 }
 
-@media (min-width:@tablet)  {
+@media (min-width: $tablet)  {
 	.checkbox-label{
 		transition: 0.2s;
 
