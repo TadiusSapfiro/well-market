@@ -1,0 +1,212 @@
+.reviews{
+	// min-height: 515px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: hidden;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+	background-color: #f7f7f7;
+
+	padding: 0 15px;
+	padding-bottom: 50px;
+}
+
+.reviews__list{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+.reviews__item{
+	position: relative;
+	width: 290px;
+	// min-height: 210px;
+	border: 1px solid rgba(0,0,0,0.08);
+	background-color: #fff;
+ 
+
+  &:hover{
+		  box-shadow: 0px 23px 22px 0px rgba(0, 0, 0, 0.09);
+  }
+}
+
+
+.reviews__content{
+	padding-top: 15px;
+}
+
+.reviews__img{
+	position: absolute;
+	top:-10px;
+	left:10px;
+	width: 90px;
+	height: auto;
+}
+.reviews__info{
+	text-align: left;
+	padding-left: 110px;
+	width: 100%;
+}
+
+.reviews__name{
+	margin: 0;
+	text-align:left ;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: auto;
+	font-weight: 400;
+}
+
+.reviews__text{
+	box-sizing: border-box;
+	width: 290px;
+	height: 75px;
+	margin:0 10px;
+	overflow: hidden;
+	text-align: left;
+	font-size: 12px;
+	line-height: 18px;
+	
+}
+
+.reviews__panel{
+	box-sizing: border-box;
+	width: 290px;
+	margin-top: 7px;
+	padding: 10px;
+	border-top: 1px solid rgba(0,0,0,0.08);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.reviews__btn{
+	background-color: transparent;
+	border: none;
+	color: #79b53d;
+	font-size: 12px;
+	line-height: 18px;
+	cursor: pointer;
+
+
+}
+
+.review__btn-opened{
+	display: none;
+}
+
+.reviews__date{
+	margin: 0;
+	font-size: 12px;
+	line-height: 18px;
+
+	// &:before{
+	// 	content: url('../images/SVG/calendar-with-a-clock-time-tools.svg');
+	// 	display: inline-block;
+	// 	width: 19px;
+	// 	height: 19px;
+	// 	// background-repeat: no-repeat;
+	// 	// background-position: center;
+	// 	// background-image: ;
+	// }
+}
+
+.reviews__button{
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 290px;
+}
+
+
+@media (min-width: $tablet)  { 
+	
+
+
+}
+
+@media (min-width: $desktop)  {
+
+}
+
+@media (min-width: $full-desktop)  {
+
+	.reviews{
+		padding-left: 40px;
+	}
+
+.reviews__item{
+	width: 355px;
+	height: 290px;
+}
+
+.reviews__img{
+	width: 110px;
+	top:-15px;
+	left:15px;
+	height: auto;
+}
+
+.reviews__info{
+	text-align: left;
+	padding-left: 140px;
+	width: 100%;
+}
+
+.reviews__name{
+	margin: 0;
+	padding: 10px 0px;
+	text-align:left ;
+	font-size: 18px;
+	line-height: auto ;
+	font-weight: 400;
+}
+
+.reviews__text{
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 15px;
+	font-size: 16px;
+	line-height: auto;
+}
+
+.reviews__panel{
+	padding: 15px;
+	font-size: 16px;
+	line-height: auto;
+}
+
+.reviews__btn{
+	color: #79b53d;
+	font-size: 16px;
+	line-height: auto;
+}
+
+.reviews__date{
+	margin: 0;
+	font-size: 16px;
+	line-height: auto;
+
+	// &:before{
+	// 	content: url('../images/SVG/calendar-with-a-clock-time-tools.svg');
+	// 	display: inline-block;
+	// 	width: 19px;
+	// 	height: 19px;
+	// 	// background-repeat: no-repeat;
+	// 	// background-position: center;
+	// 	// background-image: ;
+	// }
+}
+
+.reviews__button{
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 290px;
+}
+
+
+}

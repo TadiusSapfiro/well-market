@@ -1,0 +1,165 @@
+.footer{
+	padding: 30px 15px;
+	background-color: #3c3c3c;
+	color: #fff;
+}
+
+.footer__social{
+		font-size: 0;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.footer__social-list{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 ;
+	}
+
+	.footer__social-link{
+		display: block;
+	}
+
+	.footer__social-icon{
+		fill:#999;
+
+		&:hover{
+			fill:#79b53d;
+		}
+	}
+
+	.footer-nav{
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	}
+
+	.footer-nav__list{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.footer-nav__item{
+	width: 130px;
+	margin: 0;
+	margin-right: 15px;
+}
+
+.footer-nav__link{
+
+	display: block;
+	font-size: 12px;
+	line-height: 28px;
+	color:rgba(255,255,255,0.5);
+
+	&:hover{
+		font-weight: 700;
+	}
+
+	&:active{
+		opacity: 0.7;;
+	}
+
+	&:before{
+		position: relative;
+		top:-2px;
+		margin-right: 5px;
+		content: '';
+		display: inline-block;
+		width: 3px;
+		height: 3px;
+		background-color: #79b53d;
+	}
+
+	&:hover:before{
+		width: 13px;
+	}
+}
+
+.footer__contacts{
+	padding: 15px 0;
+	}
+
+	.footer__contacts-list{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.footer__contacts-link{
+		display: block;
+		margin-right: 15px;
+		font-size: 12px;
+		line-height: 30px;
+		white-space: nowrap;
+
+		&:before{
+			content: url("../images/SVG/phone-receiver.svg");
+			display: inline-block;
+			margin-right: 5px;
+			position: relative;
+			width: 12px;
+			height: 12px;
+		}
+
+		&--mail:before{
+			content: url("../images/SVG/mail.svg");
+		}		
+	}
+
+
+
+@media (min-width: $tablet)  { 
+	.footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.header__logo-wrapper{
+		width: 25%;
+		order: 1;
+		margin-right: 40px;
+	}
+
+	.footer__contacts{
+		width: 33%;
+		order: 3;
+	}
+
+	.footer-nav{
+		order: 2;
+		width: 41%;
+	border:none;
+	}
+}
+
+@media (min-width: $desktop)  {
+	
+	.footer{
+		padding:0 10%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.header__logo-wrapper{
+		width: 25%;
+		order: 1;
+		margin-right: 80px;
+	}
+
+	
+}
+
+
+
+@media (min-width: $full-desktop)  {
+
+}

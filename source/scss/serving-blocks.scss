@@ -1,5 +1,6 @@
 html{
 	box-sizing: border-box;
+	transition-duration: 0.2s;
 }
 
 *,
@@ -14,9 +15,16 @@ body{
 	background-color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
+	color: #232323;
+	transition-duration: 0.2s;
 }
 
+
+
+
 ul{
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -44,3 +52,26 @@ a{
 	margin: 0;
 }
 
+.body__wrapper{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+@media (min-width: $tablet)  { 
+	.body__wrapper{
+	}
+}
+
+@media (min-width: $desktop)  {
+	.body__wrapper{
+		flex-direction: row;
+	}
+}
+
+@media (min-width: $full-desktop)  {
+	.body__wrapper{
+	}
+}

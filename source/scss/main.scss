@@ -1,0 +1,21 @@
+.main{
+	flex-grow: 1;
+	background-color: #fff;
+
+}
+@media (min-width: $tablet)  { 
+
+}
+
+@media (min-width: $desktop)  {
+	.main{
+		margin: 0 3px;
+			width: 935px;
+			margin-right: 20px;
+
+	}
+}
+
+@media (min-width: $full-desktop)  {
+
+}

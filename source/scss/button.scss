@@ -1,0 +1,57 @@
+.button{
+	font-size: 16px;
+	line-height: 28px;
+	text-transform: uppercase;
+	padding: 11px 0;
+	cursor: pointer;
+	transition-duration: 0.2s;
+	outline: none;
+
+	&:active{
+			opacity: 0.7;
+		}
+
+	&--ghost{
+		background-color: transparent;
+		border: 1px solid #fff;
+		color: #fff;
+
+		&:hover{
+			background-color: #79b53d;
+			border-color: #79b53d;
+		}
+
+	
+	}
+
+	&--green{
+		border: none;
+		background-color: #79b53d;
+		color: #fff;
+
+		&:hover{
+			border: none;
+			background-color: #008b54;
+		}
+	}
+
+}
+
+@media (min-width: $tablet)  { 
+	.button{
+		font-size: 18px;
+	}
+}
+
+@media (min-width: $desktop)  {
+
+}
+
+
+
+@media (min-width: $full-desktop)  {
+	.button{
+		font-size: 24px;
+		line-height: 38px;
+	}
+}

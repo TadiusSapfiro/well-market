@@ -1,0 +1,171 @@
+.blog{
+	// min-height: 515px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: hidden;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+
+	background: url('../images/pattern-m.png');
+	padding: 0 15px;
+	padding-bottom: 50px;
+}
+
+.blog__list{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.blog__item{
+	width: 290px;
+	min-height: 310px;
+	background-color: #fff;
+  justify-content: center;
+  text-align: center;
+	
+	&:hover{
+		box-shadow: 0px 17px 28px 0px rgba(0, 0, 0, 0.08);
+	}
+}
+
+.blog__img{
+	width: 290px;
+	height: auto;
+}
+.blog__name{
+	margin: 0;
+	padding: 10px;
+	text-align:left ;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: auto;
+	font-weight: 400;
+}
+
+.blog__text{
+	margin: 0;
+	padding:0 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 18px;
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.blog__panel{
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.blog__link{
+	color: #79b53d;
+	font-size: 12px;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+.blog__date{
+	margin: 0;
+	font-size: 12px;
+	line-height: 18px;
+
+	// &:before{
+	// 	content: url('../images/SVG/calendar-with-a-clock-time-tools.svg');
+	// 	display: inline-block;
+	// 	width: 19px;
+	// 	height: 19px;
+	// 	// background-repeat: no-repeat;
+	// 	// background-position: center;
+	// 	// background-image: ;
+	// }
+}
+
+.blog__button{
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 290px;
+}
+
+
+@media (min-width: $tablet)  { 
+	
+
+
+}
+
+@media (min-width: $desktop)  {
+
+}
+
+@media (min-width: $full-desktop)  {
+	.blog{
+		padding-left: 40px;
+	}
+
+.blog__item{
+	width: 355px;
+	height: 470px;
+}
+
+.blog__img{
+	width: 355px;
+	height: auto;
+}
+
+.blog__name{
+	margin: 0;
+	padding: 20px 15px;
+	text-align:left ;
+	font-size: 18px;
+	line-height: auto ;
+	font-weight: 400;
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.blog__text{
+	padding: 25px 15px;
+	font-size: 16px;
+	line-height: auto;
+}
+
+.blog__panel{
+	padding: 10px;
+	font-size: 16px;
+	line-height: auto;
+}
+
+.blog__link{
+	color: #79b53d;
+	font-size: 16px;
+	line-height: auto;
+}
+
+.blog__date{
+	margin: 0;
+	font-size: 16px;
+	line-height: auto;
+
+	// &:before{
+	// 	content: url('../images/SVG/calendar-with-a-clock-time-tools.svg');
+	// 	display: inline-block;
+	// 	width: 19px;
+	// 	height: 19px;
+	// 	// background-repeat: no-repeat;
+	// 	// background-position: center;
+	// 	// background-image: ;
+	// }
+}
+
+.blog__button{
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 290px;
+}
+
+
+}

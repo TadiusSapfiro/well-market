@@ -1,0 +1,195 @@
+.header__wrapper{
+	padding: 0 15px;
+}
+
+.header{
+	max-height: 40px;
+	position: relative;
+	z-index: 3;
+	flex-grow: 0;
+
+}
+
+.header__logo-link{
+	position: relative;
+	z-index: 1;
+	display: block;
+	height: 40px;
+	width: 282px;
+}
+
+.header__img{
+	width:140px;
+	height:40px;
+}
+
+.header__contacts{
+	display: none;
+}
+
+.header__social{
+	display: none;
+}
+
+@media (min-width: $tablet)  { 
+
+	.header{
+		max-height: 75px;
+		position: relative;
+		z-index: 3;
+		background-color: #f7f7f7;
+	}
+
+	.header__wrapper{
+		margin: 0 25px;
+		padding: 0 0px;
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	.header__logo-link{
+		align-self: center;
+		position: relative;
+		z-index: 1;
+		display: block;
+		height: 50px;
+		width: 180px;
+		margin-right: 30px;
+		padding: 5px 0;
+	}
+
+	.header__img{
+		height: 50px;
+		width: 180px;
+
+	}
+
+	.header__contacts{
+		display: flex;
+		justify-content: space-between;
+		align-self: center;
+		margin-right: 20px;
+	}
+
+	.header__contacts-list{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.header__contacts-link{
+		display: block;
+		margin-right: 15px;
+		line-height: 25px;
+		white-space: nowrap;
+
+		&:before{
+			content: url("../images/SVG/phone-receiver.svg");
+			display: inline-block;
+			margin-right: 5px;
+			position: relative;
+			width: 12px;
+			height: 12px;
+		}
+
+		&--mail:before{
+			content: url("../images/SVG/mail.svg");
+		}		
+	}
+
+	.header__social{
+		display: block;
+		font-size: 0;
+		align-self: center;
+		margin-right: 25px;
+	}
+
+	.header__social-list{
+		display: flex;
+		justify-content: space-between;
+		width: 240px;
+	}
+
+	.header__social-link{
+		display: block;
+	}
+	.header__social-icon{
+		fill:#999;
+
+		&:hover{
+			fill:#008b54;
+		}
+	}
+
+	.header__main-nav{
+		order: 4;
+	}
+}
+
+@media (min-width: $desktop)  {
+	.header{
+		width: 305px;
+		max-height: 20000px;
+		margin-right: 10px;
+		float: left;
+	}
+
+	.header__wrapper{
+		padding: 0;
+		margin: 0 20px;
+		flex-direction: column;
+	}
+
+	.header__logo-link{
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		height: 165px;
+		width: 265px;
+		background-color: #f7f7f7;
+	}
+
+	.header__img{
+		height: 64px;
+		width: 247px;
+
+	}
+
+	.header__main-nav{
+		order: 2;
+	}
+
+	.header__contacts{
+		flex-direction: column;
+		margin: 0 20px;
+
+		padding: 45px 0;
+		border-top: 1px solid rgba(35,35,35, 0.3);
+		border-bottom: 1px solid rgba(35,35,35, 0.3);
+		order: 3;
+	}
+
+	.header__contacts-link{
+		&:before{
+			margin-right: 10px;
+		}
+	}
+
+	.header__social{
+		margin: 0;
+		padding: 45px 0;
+		
+		order: 4;
+	}
+
+	.header__social-list{
+		width: 240px;
+	}
+}
+
+@media (min-width: $full-desktop)  {
+	.header{
+	}
+}

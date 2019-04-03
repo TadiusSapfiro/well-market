@@ -1,0 +1,168 @@
+.main-nav{
+	position: relative;
+	top: -40px;
+	width: 78%;
+	float: right;
+	z-index: 2;
+	align-self: center;
+}
+.main-nav__title{
+	margin: 0;
+	padding: 0;
+	padding-left: 23px;
+	font-size: 14px;
+	line-height: 40px;
+	text-transform: uppercase;
+	font-weight: 400;
+	background-color: #fff;
+
+	display: none;
+}
+
+.main-nav__list{
+	margin: 0;
+	padding: 0;
+	padding-left: 23px;
+	padding-right: 15px;
+	background-color: #f7f7f7;
+	
+	display: none;
+
+}
+
+.main-nav__link{
+	display: block;
+	font-size: 14px;
+	line-height: 46px;
+	background-image: url("../images/SVG/right-arrow-link.svg");
+	background-repeat: no-repeat;
+	background-position: right center;
+
+	&:hover{
+		font-weight: 700;
+	}
+
+	&:active{
+		opacity: 0.7;;
+	}
+
+	&:before{
+		position: relative;
+		top:7px;
+		display: inline-block;
+		margin-right: 15px;
+		width: 25px;
+		height: 25px;
+	}
+
+	&--well:before{
+		content: url("../images/SVG/well.svg");
+	}
+
+	&--gas:before{
+		content: url("../images/SVG/gas.svg");
+	}
+
+	&--tap:before{
+		content: url("../images/SVG/tap.svg");
+	}
+
+	&--heat:before{
+		content: url("../images/SVG/heat.svg");
+	}
+
+	&--tag:before{
+		content: url("../images/SVG/tag.svg");
+	}
+
+	&--star:before{
+		content: url("../images/SVG/star.svg");
+	}
+
+	&--lamp:before{
+		content: url("../images/SVG/lamp.svg");
+	}
+
+	&--settings:before{
+		content: url("../images/SVG/settings.svg");
+	}
+
+	&--recommendation:before{
+		content: url("../images/SVG/recommendation.svg");
+	}
+
+	&--list:before{
+		content: url("../images/SVG/list.svg");
+	}
+	&--mail:before{
+		content: url("../images/SVG/mail.svg");
+	}
+}
+
+@media (min-width: $tablet)  { 
+	.main-nav{
+		width: auto;
+		top:0;
+	}
+
+	.main-nav__btn{
+		top:0;
+	}
+
+	.main-nav__title{
+		font-size: 16px;
+		line-height: 51px;
+	}
+
+	.main-nav__list{
+		width: 600px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		display: none;
+	}wellgas
+	
+
+	.main-nav__link{
+		font-size: 16px;
+		background:none;
+	}
+
+	.main-nav__item{
+		width: 50%;
+	}
+
+}
+@media (min-width: $desktop)  {
+	.main-nav{
+		width: 265px;
+		top:0;
+	}
+
+	.main-nav__title{
+		display: none;
+	}
+
+	.main-nav__list{
+		display: block;
+		width: auto;
+		padding-bottom: 40px;
+
+	}
+
+
+	.main-nav__link{
+		background-image: url("../images/SVG/right-arrow-link.svg");
+		background-repeat: no-repeat;
+		background-position: right center;
+	}
+
+	.main-nav__item{
+		width: 100%;
+	}
+
+}
+
+@media (min-width: $full-desktop)  {
+
+}
