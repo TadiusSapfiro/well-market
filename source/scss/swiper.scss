@@ -1,5 +1,6 @@
 .swiper-container {
   width: 100%;
+  position: relative;
 }
 
 
@@ -12,25 +13,36 @@
 	 margin-top: 10px;
 }
 
-.swiper-pagination{
+// .swiper-pagination{
+// 	top:10px;
+// 	left:0;
+// 	width: 100%;
+
+// }
+
+// .swiper-pagination-bullet {
+// 	border-radius: 0 !important;
+// 	width: 7px !important;
+// 	height: 7px !important;
+// 	opacity: 0.5 !important;
+// 	background: #79b53d !important;
+// 	margin-right: 10px !important;
+// }
+// .swiper-pagination-bullet-active {
+// 	width: 30px !important;
+// 	opacity: 1 !important;
+// }
+
+.parallax-window{
 	width: 100%;
+	min-height: 500px;
+  background: transparent;
 
 }
 
-.swiper-pagination-bullet {
-	border-radius: 0 !important;
-	width: 7px !important;
-	height: 7px !important;
-	opacity: 0.5 !important;
-	background: #79b53d !important;
-	margin-right: 10px !important;
+.parallax-mirror {
+    z-index:1
 }
-.swiper-pagination-bullet-active {
-	width: 30px !important;
-	opacity: 1 !important;
-}
-
-
 
 @media (min-width: $tablet)  { 
 	

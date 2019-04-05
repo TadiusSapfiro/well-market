@@ -11,6 +11,10 @@
 	&:hover{
 		 box-shadow: 0px 23px 22px 0px rgba(0, 0, 0, 0.09);
   }
+
+  &:hover .advantages__head{
+		 background-color: #79b53d;
+  }
 }
 
 .advantages__head{

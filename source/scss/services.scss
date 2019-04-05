@@ -12,12 +12,13 @@
 	width: 100%;
 	height: 233px;
 	position: relative;
-	z-index:3;
+	z-index:0;
 	top: -233px;
 	background-color: rgba(0,0,0,0.03);
 }
 
-.paralax__img--1{
+.paralax__img{
+	width: 320px;
 	text-align: center;
 	position: relative;
 	top: -20px;
@@ -123,7 +124,7 @@
 
 
 .services__wrapper{
-	width: 260px;
+	width: 290px;
 	padding: 15px;
 	padding-top: 130px;
 }
@@ -179,17 +180,6 @@
 	margin-top: 10px;
 }
 
-// .slider__test{
-// 	background-color: red;
-// 	width: 100%;
-// 	height: 400px;
-// }
-
-// .slide{
-// 	width: 290px;
-// 	height: 350px;
-// 	background-color: white;
-// }
 
 
 @media (min-width: $tablet)  { 
@@ -197,15 +187,16 @@
 		height: 300px;
 	}
 
-	.paralax__img--1{
-		top: -30px;
+	.paralax__img{
+		top: -40px;
+		width: 768px;
 	}
 
 	.paralax__mask{
 		width: 100%;
 		height: 300px;
 		position: relative;
-		z-index:4;
+		z-index:1;
 		top: -420px;
 		background-color: rgba(0,0,0,0.03);
 	}
@@ -239,7 +230,7 @@
 		margin-bottom: 10px;
 	}
 
-	.paralax__img--1{
+	.paralax__img{
 		width: 930px;
 		height: auto;
 		top: -50px;
@@ -322,6 +313,11 @@
 
 
 @media (min-width: $full-desktop)  {
+
+	.paralax__img{
+		width: 1570px;
+	}
+
 
 	.slider__controls{
 		transform: scale(1.8) translateX(-30px)

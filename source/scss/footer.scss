@@ -108,8 +108,13 @@
 		}
 
 		&--mail:before{
-			content: url("../images/SVG/mail.svg");
+			content: url("../images/SVG/close-envelope.svg");
 		}		
+
+		&--jps:before{
+			content: url("../images/SVG/jps.svg");
+		}	
+
 	}
 
 

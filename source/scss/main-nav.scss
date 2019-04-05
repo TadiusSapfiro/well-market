@@ -26,7 +26,6 @@
 	padding-right: 15px;
 	background-color: #f7f7f7;
 	
-	display: none;
 
 }
 
@@ -114,23 +113,23 @@
 		line-height: 51px;
 	}
 
-	.main-nav__list{
-		width: 600px;
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		display: none;
-	}wellgas
+	// .main-nav__list{
+	// 	width: 600px;
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	flex-wrap: wrap;
+	// }
 	
+	.main-nav__item{
+		height: 50px;
+		width: 100%;
+	}
 
 	.main-nav__link{
 		font-size: 16px;
-		background:none;
 	}
 
-	.main-nav__item{
-		width: 50%;
-	}
+	
 
 }
 @media (min-width: $desktop)  {

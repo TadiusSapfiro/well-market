@@ -8,10 +8,13 @@
 @import "main.scss";
 @import "paralax.scss";
 @import "services.scss";
+@import "service.scss";
+@import "service-header.scss";
 @import "goods.scss";
 @import "benefit.scss";
 @import "feedback.scss";
 @import "MO.scss";
+@import "service.scss";
 @import "portfolio.scss";
 @import "advantages.scss";
 @import "user-contacts.scss";
@@ -29,5 +32,76 @@
 @import "select.scss";
 @import "checkbox.scss";
 @import "swiper.scss";
+
+
+
+
+@media (max-width: $desktop)  {
+
+    .main-nav__list {
+        
+    height: 100%;
+    width: 280px;
+    left: 0;
+    top: 40px;
+    z-index: 4;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: visible;
+    transform: translate(-280px,0);
+    background-color: #f7f7f7 !important;
+    }
+    /* overlay layer */
+    .ssm-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.02);
+        display: none;
+        z-index: 1;
+    }
+
+    /* prevent scroll when nav is open */
+    .is-navOpen{
+      overflow: hidden;
+    }
+
+
+}
+
+@media (min-width: $tablet ) and (max-width: $desktop) {
+
+    .main-nav__list {
+
+    top: 75px;
+
+    }
+
+
+    // .ssm-overlay {
+    //     position: fixed;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     background-color: rgba(0,0,0,0.02);
+    //     display: none;
+    //     z-index: 1;
+    // }
+
+    // /* prevent scroll when nav is open */
+    // .is-navOpen{
+    //   overflow: hidden;
+    // }
+
+    // .main-nav__item{
+    //     height: 45px;
+    //     width: 200px;
+    //     margin-right: 20px;
+    // }
+}
+
 
 

@@ -74,15 +74,19 @@
 	font-size: 12px;
 	line-height: 18px;
 
-	// &:before{
-	// 	content: url('../images/SVG/calendar-with-a-clock-time-tools.svg');
-	// 	display: inline-block;
-	// 	width: 19px;
-	// 	height: 19px;
-	// 	// background-repeat: no-repeat;
-	// 	// background-position: center;
-	// 	// background-image: ;
-	// }
+	&:before{
+		content:'';
+		display: inline-block;
+		position: relative;
+		top:3px;
+		left:-4px;
+		width: 15px;
+		height: 15px;
+		background-image: url('../images/SVG/calendar-with-a-clock-time-tools.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 15px 15px;
+	}
 }
 
 .blog__button{
